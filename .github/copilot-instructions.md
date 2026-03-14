@@ -1,0 +1,16 @@
+<!-- Use this file to provide workspace-specific custom instructions to Copilot. -->
+- [x] Verify that the copilot-instructions.md file in the .github directory is created. ✅
+- [x] Clarify Project Requirements - React website for Sixpoint cafe with Vite
+- [x] Scaffold the Project - Created React + Vite project structure with all components
+- [x] Customize the Project - All components customized for Sixpoint cafe
+- [x] Install Required Extensions - No extensions required
+- [x] Compile the Project - Dependencies installed successfully
+- [x] Create and Run Task - Dev server running at http://localhost:5173/
+- [x] Launch the Project - Website is live and accessible
+- [x] Ensure Documentation is Complete - README.md created with full documentation
+- [ ] Customize the Project
+- [ ] Install Required Extensions
+- [ ] Compile the Project
+- [ ] Create and Run Task
+- [ ] Launch the Project
+- [ ] Ensure Documentation is Complete
