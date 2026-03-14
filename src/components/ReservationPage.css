@@ -164,6 +164,7 @@
 .table-node.large {
     width: 80px;
     height: 80px;
+    margin: 0;
 }
 
 .table-node.xlarge {
