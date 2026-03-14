@@ -3,7 +3,7 @@ import { Download, Coffee, UtensilsCrossed, Sandwich, Pizza, Soup, Salad, IceCre
 import { useLanguage } from '../context/LanguageContext'
 import { translations } from '../translations'
 import './Menu.css'
-import menuPDF from '../assets/Menu/6 Point Menu (1) (1)_compressed.pdf'
+import menuPDF from '../assets/menu/6 Point Menu (1) (1)_compressed.pdf'
 
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState('breakfast')

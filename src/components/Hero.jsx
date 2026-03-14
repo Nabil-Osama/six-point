@@ -4,7 +4,7 @@ import { Coffee, ArrowDown } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
 import { translations } from '../translations'
 import './Hero.css'
-import heroImage from '../assets/Images/619464270_17869074192537493_6440135439401881340_n.jpg'
+import heroImage from '../assets/images/619464270_17869074192537493_6440135439401881340_n.jpg'
 
 const Hero = () => {
   const { t } = useLanguage()

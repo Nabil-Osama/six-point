@@ -5,14 +5,14 @@ import { translations } from '../translations'
 import './Gallery.css'
 
 // Import images
-import img1 from '../assets/Images/518381234_122114740262924632_906631706180280234_n.jpg'
-import img2 from '../assets/Images/577306488_122140533086924632_284076888965708487_n.jpg'
-import img3 from '../assets/Images/619464270_17869074192537493_6440135439401881340_n.jpg'
-import img4 from '../assets/Images/621996498_122155263104924632_5754797658795535941_n.jpg'
+import img1 from '../assets/images/518381234_122114740262924632_906631706180280234_n.jpg'
+import img2 from '../assets/images/577306488_122140533086924632_284076888965708487_n.jpg'
+import img3 from '../assets/images/619464270_17869074192537493_6440135439401881340_n.jpg'
+import img4 from '../assets/images/621996498_122155263104924632_5754797658795535941_n.jpg'
 
 // Import videos
-import video1 from '../assets/Videios/Every corner at Six Point Cafe feels like your favorite spot. ✨ المكان اللي هتهرب فيه من الدوشة..mp4'
-import video2 from '../assets/Videios/The perfect drink for winter days. 🍫الهوت شوكليت كيندر في Six Point مش مجرد مشروب ده دفا، وطعم .mp4'
+import video1 from '../assets/videos/Every corner at Six Point Cafe feels like your favorite spot. ✨ المكان اللي هتهرب فيه من الدوشة..mp4'
+import video2 from '../assets/videos/The perfect drink for winter days. 🍫الهوت شوكليت كيندر في Six Point مش مجرد مشروب ده دفا، وطعم .mp4'
 
 const Gallery = () => {
   const [selectedVideo, setSelectedVideo] = useState(null)

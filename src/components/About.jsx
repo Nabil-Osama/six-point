@@ -3,7 +3,7 @@ import { Heart, Users, Award } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
 import { translations } from '../translations'
 import './About.css'
-import aboutImage from '../assets/Images/577306488_122140533086924632_284076888965708487_n.jpg'
+import aboutImage from '../assets/images/577306488_122140533086924632_284076888965708487_n.jpg'
 
 const About = () => {
   const { t } = useLanguage()
