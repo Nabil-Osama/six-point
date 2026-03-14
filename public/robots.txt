@@ -1,0 +1,15 @@
+# robots.txt for Six Point Cafe Website
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://sixpointcafe.com/sitemap.xml
+
+# Disallow admin or unnecessary paths (if any)
+Disallow: /api/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Crawl delay (optional, helps with server load)
+Crawl-delay: 1
