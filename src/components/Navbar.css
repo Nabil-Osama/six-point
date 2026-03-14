@@ -1,0 +1,192 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  background: rgba(44, 28, 20, 0.95); /* Deep brown, almost opaque */
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1); /* Subtle gold border */
+}
+
+.navbar.scrolled {
+  background: rgba(30, 18, 12, 0.98); /* Slightly darker on scroll */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0.5rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: padding 0.3s ease;
+  box-sizing: border-box;
+}
+
+.navbar.scrolled .navbar-container {
+  padding: 0.3rem 5%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: var(--cream);
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif; /* Or similar elegant serif font */
+}
+
+.logo-subtitle {
+  font-size: 0.85rem;
+  letter-spacing: 5px;
+  color: var(--cream);
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: var(--cream);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-gold);
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a.active-link::after {
+  width: 100%;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active-link {
+  color: var(--accent-gold);
+}
+
+/* Navbar Actions */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  color: var(--cream);
+  padding: 0.5rem;
+}
+
+/* Tablet & Mobile Responsive */
+@media (max-width: 1024px) {
+  .navbar-container {
+    padding: 0.5rem 5%;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .logo-subtitle {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+
+  .navbar-actions {
+    gap: 1rem;
+  }
+
+  /* Show mobile menu button on tablet and below */
+  .mobile-menu-btn {
+    display: block;
+    z-index: 1002;
+    position: relative;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 100%;
+    max-width: 300px; /* Limits the sidebar width on tablets/mobile, but stretches up to 300px max */
+    background: var(--dark-brown, rgba(62, 39, 35, 0.98));
+    flex-direction: column;
+    padding: 6rem 2rem;
+    gap: 2rem;
+    transition: right 0.3s ease;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+    box-sizing: border-box;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li a {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0.4rem 4%;
+  }
+  
+  .navbar-actions {
+    gap: 0.5rem;
+  }
+}
+
+/* Small Mobile Responsive */
+@media (max-width: 480px) {
+  .navbar-container {
+    padding: 0.3rem 3%;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+
+  .logo-subtitle {
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+  }
+}
